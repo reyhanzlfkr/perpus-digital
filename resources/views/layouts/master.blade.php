@@ -31,22 +31,18 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <i class="fa fa-solid fa-book-open"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Perpus Digital </div>
+                <div class="sidebar-brand-text mx-3">Perpustakaan Digital </div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -61,7 +57,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{route('kategori')}}">
                     <i class="fas fa-fw fa-list"></i>
-                    <span>Data Kategori</span></a>
+                    <span>Kategori</span></a>
             </li>
 
             <!-- Nav Item - Tables -->

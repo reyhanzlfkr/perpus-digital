@@ -29,11 +29,11 @@
                                         <td>{{ $b->penerbit }}</td>
                                         <td>{{ $b->tahun_terbit }}</td>
                                         <td>
-                                            <a href="{{ route('buku.edit', $b->id) }}" class="btn btn-primary">
-                                                Edit
+                                            <a href="{{ route('buku.edit', $b->id) }}" class="fa fa-solid fa-pen" style="margin-right: 20px">
+                                                
                                             </a>
-                                        <a href="{{ route('buku.hapus', $b->id) }}" class="btn btn-danger">
-                                            Hapus
+                                        <a href="{{ route('buku.hapus', $b->id) }}" class="fa fa-solid fa-trash">
+                                            
                                         </a>
                                         </td>
                                 </tr>

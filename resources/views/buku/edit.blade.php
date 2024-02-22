@@ -5,16 +5,14 @@
             <nav class="navbar navbar-dark bg-primary">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <b> Edit Buku</b>
+                        <b> Edit Data Buku</b>
                     </a>
                 </div>
             </nav>
             <br>
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header">
-                        Edit Data
-                    </div>
+                    
                     <div class="card-body">
                         <form action="{{ route('buku.update', $buku->id) }}" method="post">
                             @csrf

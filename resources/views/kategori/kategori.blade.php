@@ -5,16 +5,13 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">
-                        
-                    </div>
-
+                    
                     <div class="card-body">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th class="px-4 py-2">Nama Kategori</th>
-                                    <th class="px-4 py-2">Aksi</th>
+                                    <th class="col-1 px-4 py-2">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -22,11 +19,11 @@
                                     <tr>
                                         <td class="px-4 py-2">{{ $k->nama_kategori }}</td>
                                         <td>
-                                            <a href="{{ route('kategori.edit', $k->id) }}" class="btn btn-primary">
-                                                Edit
+                                            <a href="{{ route('kategori.edit', $k->id) }}" class="fa fa-solid fa-pen" style="margin-right: 20px">
+                                                
                                             </a>
-                                            <a href="{{ route('kategori.hapus', $k->id) }}" class="btn btn-danger">
-                                                Hapus
+                                            <a href="{{ route('kategori.hapus', $k->id) }}" class="fa fa-solid fa-trash">
+                                                
                                             </a>
                                         </td>
                                     </tr>

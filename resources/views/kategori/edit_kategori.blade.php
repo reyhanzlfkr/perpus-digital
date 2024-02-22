@@ -5,16 +5,14 @@
             <nav class="navbar navbar-dark bg-primary">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <b> Edit Kategori</b>
+                        <b> Edit Data Kategori</b>
                     </a>
                 </div>
             </nav>
             <br>
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header">
-                        Edit Kategori
-                    </div>
+                    
                     <div class="card-body">
                         <form action="{{ route('kategori.update', $kategori->id) }}" method="post">
                             @csrf
