@@ -58,18 +58,27 @@ class BukuController extends Controller
     }
     public function edit($id)
     {
-        $buku = Buku::whereId($id)->first();
-        return view('buku.edit')->with('buku.buku', $id);
+        $buku = Buku::findOrFail($id);
+        return view('buku.edit', ['buku'=>$buku]);
     }
-    public function update(Buku $request, $id)
+    public function update(Request $request, $id)
     {
-        $buku = Buku::find($id);
-        $buku->judul = $request->judul;
-        $buku->penulis = $request->penulis;
-        $buku->penerbit = $request->penerbit;
-        $buku->tahun_terbit = $request->tahun_terbit;
-        $buku->save();
+        $request->validate([
+            'judul'=>'required',
+            'penulis'=>'required',
+            'penerbit'=>'required',
+            'tahun_terbit'=>'required',
 
-        return redirect('/edit');
+        ]);
+        Buku::find($id)->update([
+            'judul' => $request->judul,
+            'penulis' => $request->penulis,
+            'penerbit' => $request->penerbit,
+            'tahun_terbit' => $request->tahun_terbit,
+           
+        ]);
+       
+
+        return redirect('/buku');
     }
 }

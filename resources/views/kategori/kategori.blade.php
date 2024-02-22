@@ -22,6 +22,9 @@
                                     <tr>
                                         <td class="px-4 py-2">{{ $k->nama_kategori }}</td>
                                         <td>
+                                            <a href="{{ route('kategori.edit', $k->id) }}" class="btn btn-primary">
+                                                Edit
+                                            </a>
                                             <a href="{{ route('kategori.hapus', $k->id) }}" class="btn btn-danger">
                                                 Hapus
                                             </a>
