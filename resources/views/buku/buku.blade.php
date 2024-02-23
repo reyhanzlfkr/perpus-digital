@@ -5,11 +5,8 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">List Buku</div>
-
-                    <div class="card-body">
-                        
-
+                    <div class="card-body bg-white">
+                        <h1 class="h3 font-weight-bold mb-4">Data Buku</h1>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>

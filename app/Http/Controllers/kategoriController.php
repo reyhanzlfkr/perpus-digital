@@ -23,6 +23,8 @@ class KategoriController extends Controller
         ]);
         return redirect ('/kategori')->with('success', 'Kategori berhasil ditambahkan!');
     }
+
+    //coding hapus
     public function hapus($id)
     {
         $kategori = Kategori::find($id);
@@ -31,6 +33,7 @@ class KategoriController extends Controller
         return redirect('/kategori');
     }
 
+        //coding edit
     public function edit($id)
     {
         $kategori = Kategori::findOrFail($id);

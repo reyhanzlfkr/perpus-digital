@@ -49,6 +49,7 @@ class BukuController extends Controller
         return redirect('/buku')->with('success', 'Buku berhasil ditambahkan!');
     }
 
+    //hapus
     public function hapus($id)
     {
         $buku = Buku::find($id);
@@ -56,6 +57,7 @@ class BukuController extends Controller
 
         return redirect('/buku');
     }
+    //coding edit
     public function edit($id)
     {
         $buku = Buku::findOrFail($id);

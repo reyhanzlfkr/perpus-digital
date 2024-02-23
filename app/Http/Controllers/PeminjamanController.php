@@ -49,6 +49,7 @@ class PeminjamanController extends Controller
         return redirect()->route('peminjaman.index')->with('success', 'Buku berhasil dikembalikan');
     }
 
+        //generate report
     public function print(){
         $user = User::all();
         $buku = Buku::all();
