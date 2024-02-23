@@ -30,10 +30,10 @@
                                         <td>{{ $b->tahun_terbit }}</td>
                                         <td>
                                             <a href="{{ route('buku.edit', $b->id) }}" class="fa fa-solid fa-pen" style="margin-right: 20px">
-                                                
+                                                Edit
                                             </a>
                                         <a href="{{ route('buku.hapus', $b->id) }}" class="fa fa-solid fa-trash">
-                                            
+                                            Hapus
                                         </a>
                                         </td>
                                 </tr>

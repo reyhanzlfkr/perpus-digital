@@ -11,7 +11,7 @@
                             <thead>
                                 <tr>
                                     <th class="px-4 py-2">Nama Kategori</th>
-                                    <th class="col-1 px-4 py-2">Aksi</th>
+                                    <th class="col-3 px-4 py-2">Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -20,10 +20,10 @@
                                         <td class="px-4 py-2">{{ $k->nama_kategori }}</td>
                                         <td>
                                             <a href="{{ route('kategori.edit', $k->id) }}" class="fa fa-solid fa-pen" style="margin-right: 20px">
-                                                
+                                                Edit
                                             </a>
                                             <a href="{{ route('kategori.hapus', $k->id) }}" class="fa fa-solid fa-trash">
-                                                
+                                                Hapus
                                             </a>
                                         </td>
                                     </tr>

@@ -38,6 +38,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/kategori/hapus/{id}',[KategoriController::class, 'hapus'])->name('kategori.hapus');
     Route::get('/kategori/edit/{id}',[KategoriController::class, 'edit'])->name('kategori.edit');
     Route::post('/kategori/update/{id}',[KategoriController::class, 'update'])->name('kategori.update');
+    Route::get('/report', [PeminjamanController::class, 'print'])->name('print');
 
 });
 

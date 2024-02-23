@@ -56,6 +56,10 @@
                             <a href="{{ route('peminjaman.tambah') }}" class="btn btn-primary">
                                 + Tambah Data Peminjaman
                             </a>
+                            <a href="{{ route('print') }}" class="btn btn-primary">
+                                <i class="fa fa-download"></i>
+                                Ekspor PDF
+                            </a>
                         </div>
                     </div>
                 </div>
