@@ -10,7 +10,7 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                   
+                                    <th>Foto</th>
                                     <th>Judul Buku</th>
                                     <th>Penulis</th>
                                     <th>Penerbit</th>
@@ -21,6 +21,10 @@
                             <tbody>
                                 @forelse ($buku as $b)
                                     <tr>
+                                        <td class="text-center">
+                                            <img src="{{asset('storage/'.$b->foto) }}" alt="Foto Buku" width="100">
+                                            </td>
+                                            
                                         <td>{{ $b->judul }}</td>
                                         <td>{{ $b->penulis }}</td>
                                         <td>{{ $b->penerbit }}</td>

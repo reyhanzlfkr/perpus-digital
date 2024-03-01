@@ -15,9 +15,8 @@ use App\Http\Controllers\PeminjamanController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [BukuController::class, 'welcome']);
+
 
 Route::middleware('auth')->group(function () {
     //katetgori

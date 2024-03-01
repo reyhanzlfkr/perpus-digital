@@ -33,6 +33,11 @@
                                 <label for="exampleInputPassword1" class="form-label">tahun terbit</label>
                                 <input type="number" name="tahun_terbit" value="{{$buku->tahun_terbit}}"  class="form-control">
                             </div>
+                            <div class="mb-3">
+                                <label for="foto" class="form-label">Foto Buku:</label>
+                                <input type="file" name="foto" value="{{$buku->foto}}" accept="image/*" class="form-control">
+                            </div>
+
                             <button type="submit" class="btn btn-primary">Update</button>
                         </form>
                     </div>
