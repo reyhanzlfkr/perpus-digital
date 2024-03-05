@@ -6,8 +6,8 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">
-                        <h1 class="h3 text-2xl font-semibold mb-4">Formulir Input Buku</h1>
+                    <div class="card-body bg-white">
+                        <h1 class="h3 font-weight-bold mb-4">Formulir Input Buku</h1>
                     </div>
 
                     <div class="card-body">

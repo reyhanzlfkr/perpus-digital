@@ -4,9 +4,9 @@
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card shadow-lg rounded-3">
-                    <div class="card-header bg-primary text-white">
-                        <h5 class="card-title mb-0">Edit Data Buku</h5>
+                <div class="card">
+                    <div class="card-body bg-white">
+                        <h1 class="h3 font-weight-bold mb-4">Edit Data Buku</h1>
                     </div>
                     <div class="card-body">
                         @if(session('success'))

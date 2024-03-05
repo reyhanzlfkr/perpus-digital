@@ -52,7 +52,7 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-
+            @role('admin')
             <!-- nav item  -->
             <li class="nav-item">
                 <a class="nav-link" href="{{route('buku.index')}}">
@@ -65,7 +65,7 @@
                     <i class="fas fa-fw fa-list"></i>
                     <span>Kategori</span></a>
             </li>
-
+            @endrole
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="{{route('peminjaman.index')}}">
