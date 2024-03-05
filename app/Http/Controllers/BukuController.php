@@ -27,7 +27,7 @@ class BukuController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'foto' =>'required|image|mimes:jpeg,png,jpg,gif,svg|max:100000',
+            'foto' =>'required|image|mimes:jpeg,png,jpg,gif,webp,svg|max:100000',
             'judul' => 'required',
             'penulis' => 'required',
             'penerbit' => 'required',

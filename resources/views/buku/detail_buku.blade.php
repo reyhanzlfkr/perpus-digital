@@ -14,7 +14,7 @@
                 <div class="card mb-3">
                 <img src="{{ asset('storage/'.$buku->foto) }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <table class="table table stripped">
+                        <table class="table table-hover">
                             <tr>
                                 <th nowrap>Judul Buku: </th>
                                 <td nowrap>{{$buku->judul}}</td>
