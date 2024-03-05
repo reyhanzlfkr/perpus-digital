@@ -24,7 +24,6 @@
                     <a class="nav-item nav-link" href="#">Features</a>
                     <a class="nav-item nav-link" href="#">About</a>
                 </div>
-
                 <!-- Conditionally show Login and Register links based on authentication status -->
                 @guest
                     <ul class="navbar-nav ms-auto">
