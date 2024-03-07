@@ -10,20 +10,21 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="#">Home</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">About</a>
-                </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+        </div>
+      
                 <!-- Conditionally show Login and Register links based on authentication status -->
                 @guest
                     <ul class="navbar-nav ms-auto">
@@ -63,24 +64,24 @@
 
 </html>
 
-
+<div class="p-3 mb-2 bg-light text-dark">
     <div class="container">
         <div class="row">
             @foreach ($buku as $b)
             <div class="col-md-3"> <!-- Adjust the column size based on your preference -->
                 <div class="card mb-3">
-                    <img src="{{ asset('storage/'.$b->foto) }}" style="width:250px;height:350px;" class="card-img-top" >
+                    <img src="{{ asset('storage/'.$b->foto) }}" style="max-width:100%; max-height:100%; height:350px; width:300px;" class="card-img-top" >
                     <div class="card-body">
                         <h5 class="card-title">{{$b->judul}}</h5>
                         <p class="card-text">{{$b->deskripsi}}</p>
-                        <a href="{{route('buku.show', $b->id)}}" class="btn btn-primary">Detail Buku</a>
+                        <a href="{{route('buku.show', $b->id)}}" class="btn btn-outline-primary">Detail Buku</a>
                     </div>
                 </div>
             </div>
             @endforeach
         </div>
     </div>
-
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

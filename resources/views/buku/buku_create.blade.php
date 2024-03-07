@@ -24,7 +24,7 @@
                             </div>
 
                             <div class="mb-4">
-                                <label for="pengarang" class="form-label">Penulis:</label>
+                                <label for="penulis" class="form-label">Penulis:</label>
                                 <input type="text" name="penulis" class="form-control" required>
                             </div>
 
@@ -36,6 +36,12 @@
                             <div class="mb-4">
                                 <label for="tahun_terbit" class="form-label">Tahun Terbit:</label>
                                 <input type="number" name="tahun_terbit" class="form-control" required>
+                            </div>
+
+                            
+                            <div class="mb-4">
+                                <label for="sinopsis" class="form-label">Sinopsis:</label>
+                                <input type="text" name="sinopsis" class="form-control" required>
                             </div>
 
                             <div class="mb-4">
@@ -50,7 +56,7 @@
                                 <label for="foto" class="form-label">Foto Buku:</label>
                                 <input type="file" name="foto" accept="image/*" class="form-control" required>
                             </div>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn btn-outline-primary">Simpan</button>
                         </form>
                     </div>
                 </div>

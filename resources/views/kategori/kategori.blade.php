@@ -35,7 +35,7 @@
                             </tbody>
                         </table>
                         <div class="mb-4">
-                            <a href="{{ route('kategori.create') }}" class="btn btn-primary">
+                            <a href="{{ route('kategori.create') }}" class="btn btn-outline-primary">
                                 + Tambah Data Kategori
                             </a>
                         </div>

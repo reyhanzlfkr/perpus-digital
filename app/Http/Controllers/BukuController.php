@@ -32,6 +32,7 @@ class BukuController extends Controller
             'penulis' => 'required',
             'penerbit' => 'required',
             'tahun_terbit' => 'required|integer',
+            'sinopsis' => 'required',
             'kategori_id' => 'required',
         ]);
 
@@ -46,6 +47,7 @@ class BukuController extends Controller
             'penulis' => $request->penulis,
             'penerbit' => $request->penerbit,
             'tahun_terbit' => $request->tahun_terbit,
+            'sinopsis' => $request->sinopsis,
         ]);
 
         $buku->kategori()->attach($kategori);
@@ -84,6 +86,7 @@ class BukuController extends Controller
             'penulis' => 'required',
             'penerbit' => 'required',
             'tahun_terbit' => 'required|integer',
+            'sinopsis' => 'required',
             'kategori_id' => 'required',
         ]);
 
@@ -91,7 +94,7 @@ class BukuController extends Controller
 
         if ($request->hasFile('foto')) {
             $request->validate([
-                'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:12048',
+                'foto' => 'required|image|mimes:jpeg,png,jpg,gif,webp,svg|max:12048',
             ]);
 
             // Hapus foto lama
@@ -106,6 +109,7 @@ class BukuController extends Controller
         $buku->penulis = $request->penulis;
         $buku->penerbit = $request->penerbit;
         $buku->tahun_terbit = $request->tahun_terbit;
+        $buku->sinopsis = $request->sinopsis;
         $buku->save();
 
         // Update kategori

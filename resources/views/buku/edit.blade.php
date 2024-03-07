@@ -37,7 +37,7 @@
                             <div class="mb-3">
                                 <label for="tahun_terbit" class="form-label">Tahun Terbit:</label>
                                 <select name="tahun_terbit" class="form-select custom-select" required>
-                                    @php
+                                   @php
                                         $currentYear = date('Y');
                                         $startYear = 1900; 
                                     @endphp
@@ -45,6 +45,11 @@
                                         <option value="{{ $year }}" {{ $buku->tahun_terbit == $year ? 'selected' : '' }}>{{ $year }}</option>
                                     @endfor
                                 </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="sinopsis" class="form-label">Sinopsis:</label>
+                                <input type="text" name="sinopsis" class="form-control" value="{{ $buku->sinopsis }}" required>
                             </div>
 
                             <div class="mb-3">
@@ -62,7 +67,7 @@
                             </div>
 
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                <button type="submit" class="btn btn-outline-primary">Simpan</button>
                             </div>
                         </form>
                     </div>

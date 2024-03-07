@@ -53,10 +53,10 @@
                             </tbody>
                         </table>
                         <div class="mb-4">
-                            <a href="{{ route('peminjaman.tambah') }}" class="btn btn-primary">
+                            <a href="{{ route('peminjaman.tambah') }}" class="btn btn-outline-primary">
                                 + Tambah Data Peminjaman
                             </a>
-                            <a href="{{ route('print') }}" class="btn btn-primary">
+                            <a href="{{ route('print') }}" class="btn btn-outline-primary">
                                 <i class="fa fa-download"></i>
                                 Ekspor PDF
                             </a>

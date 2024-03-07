@@ -15,6 +15,7 @@
                                     <th>Penulis</th>
                                     <th>Penerbit</th>
                                     <th>Tahun Terbit</th>
+                                    <th>Sinopsis</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -29,6 +30,7 @@
                                         <td>{{ $b->penulis }}</td>
                                         <td>{{ $b->penerbit }}</td>
                                         <td>{{ $b->tahun_terbit }}</td>
+                                        <td>{{ $b->sinopsis }}</td>
                                         <td>
                                             <a href="{{ route('buku.edit', $b->id) }}" class="fa fa-solid fa-pen" style="margin-right: 20px">
                                                 Edit
@@ -46,7 +48,7 @@
                             </tbody>
                         </table>
                         <div class="mb-4">
-                            <a href="{{ route('buku.create') }}" class="btn btn-primary">
+                            <a href="{{ route('buku.create') }}" class="btn btn-outline-primary">
                                 + Tambah Data Buku
                             </a>
                         </div>

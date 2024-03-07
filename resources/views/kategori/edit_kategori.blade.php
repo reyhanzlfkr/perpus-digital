@@ -22,7 +22,7 @@
                                     id="judul" aria-describedby="emailHelp">
                             </div>
                             
-                            <button type="submit" class="btn btn-primary">Update</button>
+                            <button type="submit" class="btn btn-outline-primary">Update</button>
                         </form>
                     </div>
                 </div>

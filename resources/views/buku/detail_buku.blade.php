@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en"> 
+       
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,26 +10,30 @@
 </head>
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-md-3"> <!-- Adjust the column size based on your preference -->
-                <div class="card mb-3">
-                <img src="{{ asset('storage/'.$buku->foto) }}" class="card-img-top" alt="...">
+            <div class="col-md-4"> <!-- Adjust the column size based on your preference -->
+                <div class="card mb-4">
+                <img src="{{ asset('storage/'.$buku->foto) }}" class="rounded" alt="...">
                     <div class="card-body">
                         <table class="table table-hover">
                             <tr>
-                                <th nowrap>Judul Buku: </th>
-                                <td nowrap>{{$buku->judul}}</td>
+                                <th >Judul Buku: </th>
+                                <td >{{$buku->judul}}</td>
                             </tr>
                             <tr>
-                                <th nowrap>Penulis: </th>
-                                <td nowrap>{{$buku->penulis}}</td>
+                                <th >Penulis: </th>
+                                <td >{{$buku->penulis}}</td>
                             </tr>
                             <tr>
-                                <th nowrap>Penerbit: </th>
-                                <td nowrap>{{$buku->penerbit}}</td>
+                                <th >Penerbit: </th>
+                                <td >{{$buku->penerbit}}</td>
                             </tr>
                             <tr>
-                                <th nowrap>Tahun Terbit: </th>
-                                <td nowrap>{{$buku->tahun_terbit}}</td>
+                                <th >Tahun Terbit: </th>
+                                <td >{{$buku->tahun_terbit}}</td>
+                            </tr>
+                            <tr>
+                                <th >Sinopsis: </th>
+                                <td >{{$buku->sinopsis}}</td>
                             </tr>
                         </table>
                     </div>

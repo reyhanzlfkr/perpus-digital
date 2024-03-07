@@ -44,7 +44,7 @@
                                 <input type="date" required name="tanggal_pengembalian" id="tanggal_pengembalian" class="form-control">
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn btn-outline-primary">Simpan</button>
                         </form>
                     </div>
                 </div>
