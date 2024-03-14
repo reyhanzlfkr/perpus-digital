@@ -7,6 +7,12 @@
                 <div class="card">
                     <div class="card-body bg-white">
                         <h1 class="h3 font-weight-bold mb-4">Data Buku</h1>
+                        <div class="mb-4">
+                            <a href="{{ route('buku.create') }}" class="btn btn-outline-dark">
+                                <i class="far fa-plus-square"></i>
+                                Tambah Data Buku
+                            </a>
+                        </div>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -32,10 +38,10 @@
                                         <td>{{ $b->tahun_terbit }}</td>
                                         <td>{{ $b->sinopsis }}</td>
                                         <td>
-                                            <a href="{{ route('buku.edit', $b->id) }}" class="fa fa-solid fa-pen" style="margin-right: 20px">
+                                            <a href="{{ route('buku.edit', $b->id) }}" i class="fas fa-pen"  style="margin-right: 20px">
                                                 Edit
                                             </a>
-                                        <a href="{{ route('buku.hapus', $b->id) }}" class="fa fa-solid fa-trash">
+                                        <a href="{{ route('buku.hapus', $b->id) }}" i class="fas fa-trash" style="color: #ff0000;"> 
                                             Hapus
                                         </a>
                                         </td>
@@ -47,11 +53,7 @@
                                 @endforelse
                             </tbody>
                         </table>
-                        <div class="mb-4">
-                            <a href="{{ route('buku.create') }}" class="btn btn-outline-primary">
-                                + Tambah Data Buku
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

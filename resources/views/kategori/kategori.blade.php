@@ -7,6 +7,12 @@
                 <div class="card">
                     <div class="card-body bg-white">
                         <h1 class="h3 font-weight-bold mb-4">Data Kategori</h1>
+                        <div class="mb-4">
+                            <a href="{{ route('kategori.create') }}" class="btn btn-outline-dark" >
+                                <i class="far fa-plus-square"></i>
+                                Tambah Data Kategori
+                            </a>
+                        </div>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -19,10 +25,10 @@
                                     <tr>
                                         <td class="px-4 py-2">{{ $k->nama_kategori }}</td>
                                         <td>
-                                            <a href="{{ route('kategori.edit', $k->id) }}" class="fa fa-solid fa-pen" style="margin-right: 20px">
+                                            <a href="{{ route('kategori.edit', $k->id) }}" i class="fas fa-pen"  style="margin-right: 20px">
                                                 Edit
                                             </a>
-                                            <a href="{{ route('kategori.hapus', $k->id) }}" class="fa fa-solid fa-trash">
+                                            <a href="{{ route('kategori.hapus', $k->id) }}" i class="fas fa-trash" style="color: #ff0000;">
                                                 Hapus
                                             </a>
                                         </td>
@@ -34,11 +40,7 @@
                                 @endforelse
                             </tbody>
                         </table>
-                        <div class="mb-4">
-                            <a href="{{ route('kategori.create') }}" class="btn btn-outline-primary">
-                                + Tambah Data Kategori
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

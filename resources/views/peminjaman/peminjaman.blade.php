@@ -12,7 +12,16 @@
                                 {{ session('success') }}
                             </div>
                         @endif
-
+                        <div class="mb-4">
+                            <a href="{{ route('peminjaman.tambah') }}" class="btn btn-outline-dark">
+                                <i class="far fa-plus-square"></i>
+                                Tambah Data Peminjaman
+                            </a>
+                            <a href="{{ route('print') }}" class="btn btn-outline-dark">
+                                <i class="far fa-save"></i>
+                                Ekspor PDF
+                            </a>
+                        </div>
                        
 
                         <table class="table table-bordered">
@@ -52,15 +61,7 @@
                                 @endforelse
                             </tbody>
                         </table>
-                        <div class="mb-4">
-                            <a href="{{ route('peminjaman.tambah') }}" class="btn btn-outline-primary">
-                                + Tambah Data Peminjaman
-                            </a>
-                            <a href="{{ route('print') }}" class="btn btn-outline-primary">
-                                <i class="fa fa-download"></i>
-                                Ekspor PDF
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

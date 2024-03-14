@@ -63,7 +63,7 @@
         <div class="card border-0 shadow-lg rounded-lg">
             <div class="card-body">
                 <div class="text-gray-900">
-                    {{ __("Selamat Datang") }} {{ Auth::user()->name }} {{ __("Di Perpustakaan Digital") }}
+                    {{ __("Selamat Datang") }} {{ Auth::user()->name }} 
                 </div>
             </div>
         </div>
