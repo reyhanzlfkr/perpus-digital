@@ -55,9 +55,9 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-<hr class="border border-dark border-2 opacity-1">
-</html>
 
+</html>
+<hr class="border border-dark border-2 opacity-1">
 <div class="p-3 mb-2 bg-white">
     <div class="container">
         <div class="row">
