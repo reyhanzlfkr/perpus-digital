@@ -69,7 +69,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{$b->judul}}</h5>
                         <p class="card-text">{{$b->deskripsi}}</p>
-                        <a href="{{route('buku.show', $b->id)}}" class="btn btn-outline-primary">Detail Buku</a>
+                        <a href="{{route('buku.show', $b->id)}}" class="btn btn-outline-dark">Detail Buku</a>
                     </div>
                 </div>
             </div>

@@ -56,7 +56,7 @@
                                 <label for="foto" class="form-label">Foto Buku:</label>
                                 <input type="file" name="foto" accept="image/*" class="form-control" required>
                             </div>
-                            <button type="submit" class="btn btn-outline-primary">Simpan</button>
+                            <button type="submit" class="btn btn-outline-dark">Simpan</button>
                         </form>
                     </div>
                 </div>
