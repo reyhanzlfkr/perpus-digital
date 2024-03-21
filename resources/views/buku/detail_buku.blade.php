@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<div class="p-3 mb-2 bg-dark text-white">
+<div class="p-3 mb-2 bg-white">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-md-4"> <!-- Adjust the column size based on your preference -->

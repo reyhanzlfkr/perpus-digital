@@ -67,7 +67,7 @@
                             </div>
 
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-outline-primary">Simpan</button>
+                                <button type="submit" class="btn btn-outline-dark">Simpan</button>
                             </div>
                         </form>
                     </div>

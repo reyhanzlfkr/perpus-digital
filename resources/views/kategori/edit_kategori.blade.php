@@ -17,7 +17,7 @@
                                     id="judul" aria-describedby="emailHelp">
                             </div>
                             
-                            <button type="submit" class="btn btn-outline-primary">Simpan</button>
+                            <button type="submit" class="btn btn-outline-dark">Simpan</button>
                         </form>
                     </div>
             </div>

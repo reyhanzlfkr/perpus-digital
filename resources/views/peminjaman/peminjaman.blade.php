@@ -47,7 +47,7 @@
                                             @if($p->status === 'Dipinjam')
                                                 <form action="{{ route('peminjaman.kembalikan', $p->id) }}" method="post">
                                                     @csrf
-                                                    <button type="submit" class="btn btn-primary">Kembalikan</button>
+                                                    <button type="submit" class="btn btn-outline-dark">Kembalikan</button>
                                                 </form>
                                             @else
                                                 -
