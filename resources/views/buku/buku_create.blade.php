@@ -2,14 +2,13 @@
 
 @section('content')
 
-    <div class="container py-4">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-lg">
                     <div class="card-body bg-white">
                         <h1 class="h3 font-weight-bold mb-4">Formulir Input Buku</h1>
                     </div>
-
                     <div class="card-body">
                         @if(session('success'))
                             <p class="text-success">{{ session('success') }}</p>
@@ -56,11 +55,11 @@
                                 <label for="foto" class="form-label">Foto Buku:</label>
                                 <input type="file" name="foto" accept="image/*" class="form-control" required>
                             </div>
-                            <button type="submit" class="btn btn-outline-dark">Simpan</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>
                     </div>
-                </div>
             </div>
         </div>
     </div>
+</div>
 @endsection

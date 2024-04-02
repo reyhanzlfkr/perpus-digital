@@ -8,13 +8,14 @@
                     <div class="card-body bg-white">
                         <h1 class="h3 font-weight-bold mb-4">Data Kategori</h1>
                         <div class="mb-4">
-                            <a href="{{ route('kategori.create') }}" class="btn btn-outline-dark" >
-                                <i class="far fa-plus-square"></i>
-                                Tambah Data Kategori
+                            <a href="{{ route('kategori.create') }}" class="btn btn-primary" >
+                                
+                               + Tambah Kategori
                             </a>
                         </div>
-                        <table class="table table-bordered">
-                            <thead>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                                <thead class="bg-primary text-white">
                                 <tr>
                                     <th class="px-4 py-2">Nama Kategori</th>
                                     <th class="col-3 px-4 py-2">Aksi</th>
@@ -25,11 +26,11 @@
                                     <tr>
                                         <td class="px-4 py-2">{{ $k->nama_kategori }}</td>
                                         <td>
-                                            <a href="{{ route('kategori.edit', $k->id) }}" i class="fas fa-pen"  style="margin-right: 20px">
+                                            <a href="{{ route('kategori.edit', $k->id) }}" a class="btn btn-info" i class="fas fa-pen"  style="margin-right: 20px">
                                                 Edit
                                             </a>
-                                            <a href="{{ route('kategori.hapus', $k->id) }}" i class="fas fa-trash" style="color: #ff0000;">
-                                                Hapus
+                                            <a href="{{ route('kategori.hapus', $k->id) }}" a class="btn btn-info" i class="fas fa-trash" >
+                                                Delete
                                             </a>
                                         </td>
                                     </tr>
