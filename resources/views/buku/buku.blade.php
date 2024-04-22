@@ -41,7 +41,7 @@
                                             <a href="{{ route('buku.edit', $b->id) }}" a class="btn btn-info" i class="fas fa-pen" style="margin-right: 20px">
                                                 Edit
                                             </a>
-                                        <a href="{{ route('buku.hapus', $b->id) }}" a class="btn btn-info" i class="fas fa-trash" > 
+                                        <a href="{{ route('buku.hapus', $b->id) }}" a class="btn btn-danger" i class="fas fa-trash" > 
                                             DELETE
                                         </a>
                                         </td>

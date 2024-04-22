@@ -29,7 +29,7 @@
                                             <a href="{{ route('kategori.edit', $k->id) }}" a class="btn btn-info" i class="fas fa-pen"  style="margin-right: 20px">
                                                 Edit
                                             </a>
-                                            <a href="{{ route('kategori.hapus', $k->id) }}" a class="btn btn-info" i class="fas fa-trash" >
+                                            <a href="{{ route('kategori.hapus', $k->id) }}" a class="btn btn-danger" i class="fas fa-trash" >
                                                 Delete
                                             </a>
                                         </td>

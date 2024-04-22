@@ -35,7 +35,7 @@
                                         <td>
                                            
                                             
-                                            <a class="btn btn-info" href="{{ route('users.hapus', $u->id)}}">Hapus</a>
+                                            <a class="btn btn-danger" href="{{ route('users.hapus', $u->id)}}">Hapus</a>
                                         </td>
                                         
                                     </tr>
